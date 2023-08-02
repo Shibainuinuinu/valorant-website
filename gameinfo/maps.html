@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/31807237-fc8a-4d60-9bbd-d9abe0c08c9c/valorant.png?v=1659988933595"
+    />
+    <title>Valorant</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body class="mapsBackground">
+    <nav class="nav-bar-height">
+      <ul>
+        <li>
+          <img
+            id="logo"
+            src="https://cdn.glitch.global/31807237-fc8a-4d60-9bbd-d9abe0c08c9c/valoranticon.png?v=1660005572139"
+            onclick="location.href='../index.html'"
+          />
+        </li>
+        <li class="dropdown">
+          <div>Game Info</div>
+          <ul class="dropdownContent">
+            <li><a href="agents.html">Agents</a></li>
+            <li><a href="maps.html">Maps</a></li>
+            <li><a href="weapons.html">Arsenal</a></li>
+          </ul>
+        </li>
+        <li><a href="socials.html">Socials</a></li>
+        <li class="playNowNavButton">
+          <button
+            onclick="location.href = 'https://playvalorant.com/en-us/?gclid=Cj0KCQjwrs2XBhDjARIsAHVymmSsm5eRe9utM391g8f7UtnRuitjpODoXllyRbSA81f5GlIrXbt3nrkaAneqEALw_wcB&gclsrc=aw.d'"
+          >
+            Download
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="content-wrapper">
+        <h1 class="map-title">MAPS</h1>
+        <div class="map-container">
+          <div id="map-left-arrow" class="arrowButtons">
+            <img
+              src="https://cdn.glitch.global/31807237-fc8a-4d60-9bbd-d9abe0c08c9c/leftarrow.png?v=1660183556545"
+              class="arrow"
+            />
+          </div>
+          <div>
+            <img id="map-image" class="mapImages" />
+          </div>
+          <div class="map-text-wrapper">
+            <h1 id="map-name"></h1>
+            <p id="map-description"></p>
+          </div>
+          <div id="map-right-arrow" class="arrowButtons">
+            <img
+              src="https://cdn.glitch.global/31807237-fc8a-4d60-9bbd-d9abe0c08c9c/rightarrow.png?v=1660183559820"
+              class="arrow"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
