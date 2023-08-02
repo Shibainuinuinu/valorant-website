@@ -9,7 +9,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 if (
-  location.href === "https://valorantwebsite.glitch.me/gameinfo/agents.html"
+  location.pathname.endsWith("/gameinfo/agents.html") 
 ) {
   const valorantAgentList = {
     BREACH: {
@@ -168,7 +168,7 @@ if (
 }
 
 if (
-  location.href === "https://valorantwebsite.glitch.me/gameinfo/weapons.html"
+  location.pathname.endsWith("/gameinfo/weapons.html")
 ) {
   const weaponsList = [
     {
@@ -481,7 +481,7 @@ class MapDisplay {
 
   initialize() {
     if (
-      location.href === "https://valorantwebsite.glitch.me/gameinfo/maps.html"
+      location.pathname.endsWith("/gameinfo/maps.html")
     ) {
       console.log("ran initialization for map display");
 
